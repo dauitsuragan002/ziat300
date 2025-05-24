@@ -46,13 +46,20 @@ This Chrome extension allows users to take the content of the currently open web
 
 ## ⚙️ Additional Features
 
+<<<<<<< HEAD
 - **Read aloud (TTS)**: Listen to the summary in the selected language using Text-to-Speech technology
+=======
+- **Read aloud**: Listen to the summary in the selected language
+>>>>>>> 7ae55a722bccf90246f7c6f8d8041b3285738c25
 - **Copy**: Copy the summary
 - **Feedback**: Leave feedback about the summary quality
 - **Refresh**: Regenerate the summary
 - **Time**: See when the summary was generated
 - **Localization**: All features and UI are available in both Kazakh and English
+<<<<<<< HEAD
 - 
+=======
+>>>>>>> 7ae55a722bccf90246f7c6f8d8041b3285738c25
 
 ## 🙏 Acknowledgements
 
@@ -60,5 +67,8 @@ This Chrome extension allows users to take the content of the currently open web
 - [Chrome Extension Developer Documentation](https://developer.chrome.com/docs/extensions/mv3/getstarted/) – for guidance on building Chrome extensions
 - https://t.me/al1xan – Developed the frontend of the site
 - Dake – General contributions
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 7ae55a722bccf90246f7c6f8d8041b3285738c25
