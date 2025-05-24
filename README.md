@@ -1,7 +1,3 @@
-Here is your README.md in English (with all sections translated and adapted for an English-speaking audience):
-
----
-
 ![logo](images/icon.png)
 
 # Ziat300 – Chrome Extension for Summarizing Web Pages in Kazakh and English
