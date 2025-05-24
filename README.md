@@ -1,12 +1,8 @@
-Here is your README.md in English (with all sections translated and adapted for an English-speaking audience):
-
----
+# Ziat300 – Chrome (browser) Extension for Summarizing Web Pages in Kazakh and Multiple Languages
 
 ![logo](images/icon.png)
 
-# Ziat300 – Chrome Extension for Summarizing Web Pages in Kazakh and English
-
-Ziat300 is a Chrome extension that summarizes the content of web pages in Kazakh or English. With the help of artificial intelligence, it reads the content of any web page and generates a short or full summary in the selected language.
+Ziat300 is a Chrome extension that summarizes the content of web pages in Kazakh, English, or other supported languages. Powered by artificial intelligence Gemini, it reads the content of any web page and generates either a short or full summary in the selected language.
 
 ## 📦 Overview
 
@@ -18,9 +14,6 @@ This Chrome extension allows users to take the content of the currently open web
 - All UI elements and summaries are localized according to the selected language.
 - You can switch the language at any time using the globe icon in the popup header.
 - Your language preference is saved and used automatically next time.
-
-## 🎬 Screenshots
-![Short summary screenshot](images/icon.png)
 
 ## 🚀 Features
 
@@ -74,20 +67,6 @@ This Chrome extension allows users to take the content of the currently open web
 - **Refresh**: Regenerate the summary
 - **Time**: See when the summary was generated
 - **Localization**: All features and UI are available in both Kazakh and English
-
-## 🤝 Contributing
-
-If you would like to contribute to improving the project:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to your branch (`git push origin feature/AmazingFeature`)
-5. Create a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
