@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Веб-мазмұндаушы</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="popup.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#fff" fill-rule="evenodd" d="M9 4.5a.75.75 0 0 1 .721.544l.813 2.846a3.75 3.75 0 0 0 2.576 2.576l2.846.813a.75.75 0 0 1 0 1.442l-2.846.813a3.75 3.75 0 0 0-2.576 2.576l-.813 2.846a.75.75 0 0 1-1.442 0l-.813-2.846a3.75 3.75 0 0 0-2.576-2.576l-2.846-.813a.75.75 0 0 1 0-1.442l2.846-.813A3.75 3.75 0 0 0 7.466 7.89l.813-2.846A.75.75 0 0 1 9 4.5m9-3a.75.75 0 0 1 .728.568l.258 1.036a2.63 2.63 0 0 0 1.91 1.91l1.036.258a.75.75 0 0 1 0 1.456l-1.036.258a2.63 2.63 0 0 0-1.91 1.91l-.258 1.036a.75.75 0 0 1-1.456 0l-.258-1.036a2.63 2.63 0 0 0-1.91-1.91l-1.036-.258a.75.75 0 0 1 0-1.456l1.036-.258a2.63 2.63 0 0 0 1.91-1.91l.258-1.036A.75.75 0 0 1 18 1.5M16.5 15a.75.75 0 0 1 .712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 0 1 0 1.422l-1.183.395a1.5 1.5 0 0 0-.948.948l-.395 1.183a.75.75 0 0 1-1.422 0l-.395-1.183a1.5 1.5 0 0 0-.948-.948l-1.183-.395a.75.75 0 0 1 0-1.422l1.183-.395a1.5 1.5 0 0 0 .948-.948l.395-1.183A.75.75 0 0 1 16.5 15" clip-rule="evenodd"></path></svg>
+                <div class="head">
+                    <h1 class="head-h1" id="mainTitle" data-i18n="app_title"></h1>
+                    <p class="head-p" data-i18n="app_subtitle"></p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button id="languageToggle" class="icon-button" title="Тілді ауыстыру" style="margin-right: 8px;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="2"/>
+                      <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20" stroke="#fff" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button id="infoButton" class="icon-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="12" r="10" stroke="#fff" stroke-width="2"/>
+                      <line x1="12" y1="8" x2="12" y2="13" stroke="#fff" stroke-width="2"/>
+                      <circle cx="12" cy="16" r="1.2" fill="#fff"/>
+                    </svg>
+                </button>
+                <button class="icon-button close-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                      <line x1="6" y1="6" x2="18" y2="18" stroke="#fff" stroke-width="2"/>
+                      <line x1="6" y1="18" x2="18" y2="6" stroke="#fff" stroke-width="2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="head-z"></div>
+    <div class="btns">
+        <button id="shortSummary" data-i18n="short_summary"></button>
+        <button id="fullSummary" data-i18n="full_summary"></button>
+    </div>
+    <div id="summary"></div>
+    
+    <div id="linkContainer" style="display: none;">
+        <div class="button-group">
+            <button id="linkText" class="link-button" title="Мазмұндамаға сілтеме">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#fff" d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"/></svg>
+                <span style="margin-left: 8px;" data-i18n="link_summary"></span>
+            </button>
+            <button id="copyButton" class="link-button" title="Мазмұндаманы көшіру">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#fff" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+            </button>
+            <button id="audioButton" class="link-button" title="Дауыстап оқу">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#fff" d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            </button>
+        </div>
+    </div>
+    
+    <div id="feedbackContainer" style="display: none;" class="feedback">
+        <p data-i18n="feedback_question">Мазмұндау пайдалы болды ма?</p>
+        <div class="feedback-buttons">
+            <button class="icon-button feedback-btn" id="likeButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#f1f1f1" d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57l.03-.32c0-.41-.17-.79-.44-1.06L14.17 1L7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+            </button>
+            <button class="icon-button feedback-btn" id="dislikeButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#f1f1f1" d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57l-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/></svg>
+            </button>
+        </div>
+        <div id="suggestionContainer" style="display: none;">
+            <p class="suggestion-text" data-i18n="suggestion_text">Мазмұндау сапасын жақсарту үшін ұсынысыңызды жазыңыз</p>
+            <textarea id="suggestionInput" class="suggestion-input" rows="3" placeholder="Ұсынысыңызды жазыңыз..."></textarea>
+            <button id="sendSuggestion" class="suggestion-button" data-i18n="send_suggestion">Жіберу</button>
+        </div>
+    </div>
+    <div id="infoPopup" class="info-popup">
+        <div class="info-content">
+            <p data-i18n="info_time">Мазмұндау <span id="generationTime"></span> кезінде жасалды</p>
+            <div class="info-buttons">
+                <button id="refreshSummary" class="info-refresh" data-i18n="refresh">Жаңарту</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

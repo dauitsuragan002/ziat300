@@ -1,0 +1,19 @@
+{
+  "name": "ziat-tts",
+  "version": "1.0.0",
+  "description": "Ziat300 TTS.",
+  "main": "background.js",
+  "type": "module",
+  "dependencies": {
+    "microsoft-cognitiveservices-speech-sdk": "^1.34.0",
+    "msedge-tts": "^1.0.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "scripts": {
+    "start": "node tts-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+} 

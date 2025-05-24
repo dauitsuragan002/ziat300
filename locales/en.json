@@ -1,0 +1,15 @@
+{
+  "app_title": "Web Summarizer",
+  "app_subtitle": "Powered by AI",
+  "short_summary": "Short",
+  "full_summary": "Full",
+  "copy_summary": "Copy summary",
+  "audio_summary": "Read aloud",
+  "link_summary": "Link to summary",
+  "feedback_question": "Was the summary helpful?",
+  "suggestion_text": "Write your suggestion to improve the summary",
+  "send_suggestion": "Send",
+  "info_time": "Summary generated at <span id=\"generationTime\"></span>",
+  "refresh": "Refresh",
+  "error": "An error occurred: {error}"
+} 

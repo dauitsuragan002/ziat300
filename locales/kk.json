@@ -1,0 +1,15 @@
+{
+  "app_title": "Веб-мазмұндаушы",
+  "app_subtitle": "Нейрожелімен жасалған",
+  "short_summary": "Қысқаша",
+  "full_summary": "Толық",
+  "copy_summary": "Мазмұндаманы көшіру",
+  "audio_summary": "Дауыстап оқу",
+  "link_summary": "Мазмұндамаға сілтеме",
+  "feedback_question": "Мазмұндау пайдалы болды ма?",
+  "suggestion_text": "Мазмұндау сапасын жақсарту үшін ұсынысыңызды жазыңыз",
+  "send_suggestion": "Жіберу",
+  "info_time": "Мазмұндау <span id=\"generationTime\"></span> кезінде жасалды",
+  "refresh": "Жаңарту",
+  "error": "Қате орын алды: {error}"
+} 
