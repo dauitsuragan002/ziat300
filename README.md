@@ -68,20 +68,6 @@ This Chrome extension allows users to take the content of the currently open web
 - **Time**: See when the summary was generated
 - **Localization**: All features and UI are available in both Kazakh and English
 
-## 🤝 Contributing
-
-If you would like to contribute to improving the project:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to your branch (`git push origin feature/AmazingFeature`)
-5. Create a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgements
 
 - [Gemini AI](https://ai.google.dev/gemini-api/docs/quickstart) – This extension uses the Gemini API for advanced text and video summarization and transcription. See the official documentation for more details.
